@@ -1,4 +1,4 @@
 {
-  "host": "dum-list-backend-app.feathersjs.com",
+  "host": "dumblist-backend.herokuapp.com",
   "port": "PORT"
 }
