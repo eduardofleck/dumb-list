@@ -7,7 +7,7 @@ trigger:
   - master
 
 variables:
-  buildFolder: "out"
+  buildFolder: "build"
 
   # Web app name
   webAppName: "dumb-list"
