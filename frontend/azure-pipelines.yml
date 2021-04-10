@@ -7,7 +7,7 @@ trigger:
   - master
 
 variables:
-  buildFolder: "fontend/build"
+  buildFolder: "out"
 
   # Web app name
   webAppName: "dumb-list"
@@ -71,7 +71,7 @@ stages:
                 - task: AzureWebApp@1
                   displayName: "Azure Web App Deploy: dumb-list"
                   inputs:
-                    azureSubscription: 'dumb-list-azure'
+                    azureSubscription: "dumb-list-azure"
                     appType: webAppLinux
                     appName: $(webAppName)
                     runtimeStack: "NODE|10.10"
