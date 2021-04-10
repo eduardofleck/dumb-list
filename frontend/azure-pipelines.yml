@@ -9,9 +9,6 @@ trigger:
 variables:
   buildFolder: "fontend/build"
 
-  # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: "a"
-
   # Web app name
   webAppName: "dumb-list"
 
