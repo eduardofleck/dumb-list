@@ -10,7 +10,7 @@ variables:
   buildFolder: "backend/out"
 
   # Web app name
-  webAppName: "dumb-list"
+  webAppName: "dumb-list-backend"
 
   # Environment name
   environmentName: "dumb-list"
