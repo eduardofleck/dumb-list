@@ -1,4 +1,4 @@
 {
   "host": "dumblist-backend.herokuapp.com",
-  "port": "PORT"
+  "port": 8080
 }

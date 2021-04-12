@@ -22,7 +22,7 @@ const app = express(feathers());
 
 //Loads environment variables
 require("dotenv").config();
-//If the name of the env. variables matches the one used on congig/default, it uses the value of the variable
+//If the name of the env. variables matches the one used on config/default, it uses the value of the variable
 //I know, it is strange :)
 
 // Load app configuration
