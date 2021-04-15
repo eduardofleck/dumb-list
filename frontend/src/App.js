@@ -9,6 +9,8 @@ import { Card } from "@material-ui/core";
 import axios from "axios";
 import feathers from "@feathersjs/feathers";
 import rest from "@feathersjs/rest-client";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import IconButton from "@material-ui/core/IconButton";
 
 const MainGrid = styled.ul`
   display: grid;
@@ -92,17 +94,20 @@ function App() {
       });
   };
 
+  const navigateGitHubPage = (e) => {
+    window.open("https://github.com/eduardofleck/dumb-list", "_blank"); //to open new page
+  };
+
   return (
     <div>
-      {/* <NavBar>
-        <NavItem>Dumb List!</NavItem>
-        <NavItem>Aparições</NavItem>
-      </NavBar> */}
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
-          <Button color="inherit">Dumb List!</Button>
-          {/* <Button color="inherit">Aparições</Button>
-          <Button color="inherit">Ordem</Button> */}
+          <Button color="inherit">Ranking Osmar Terraplana</Button>
+          <div style={{ position: "absolute", right: "0" }}>
+            <IconButton color="inherit">
+              <GitHubIcon onClick={navigateGitHubPage} />
+            </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
       <MainGrid>
@@ -112,7 +117,7 @@ function App() {
           </div>
           <div>
             <Typography variant="h5">
-              Lista das piores previsões do COVID
+              Lista das piores previsões do COVID-19
             </Typography>
           </div>
         </SubTitle>

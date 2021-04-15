@@ -1,10 +1,10 @@
-# Dumb-list
+# Dumb-list (Ranking Osmar Terraplana)
 
 This project is a joke on the face of populist politicians and other people who denial covid-19.
 
 The project is a list of the worst predictions made to COVID-19, such as "It is a small flu" or "(In Brazil) Less than 800 people will die from it".
 
-You can find the (Brazilian) live version here: https://osmarterraplana.herokuapp.com/
+You can find the (Brazilian) live version here: https://dumb-list.azurewebsites.net/
 
 Wanna create a version to your country? Do it, please. Don`t hesitate to contact me! :)
 

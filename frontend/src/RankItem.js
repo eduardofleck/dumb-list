@@ -37,7 +37,6 @@ const UserImg = styled.img`
 
 const Header = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr;
 `;
 
 const Prediction = styled.div`
@@ -72,40 +71,19 @@ function RankItem(props) {
           <div>
             <RightDiv>
               <Typography color="textSecondary" gutterBottom>
-                #{props.item.position}
+                #1
               </Typography>
             </RightDiv>
             <Header>
-              <PictureDiv>
-                <UserImg src={imagePredictor}></UserImg>
-              </PictureDiv>
               <div>
-                <div>Quem: {props.item.who}</div>
-                <div>Quando: {props.item.when}</div>
-                <div>O que: {props.item.what}</div>
+                <Typography variant="h5">
+                  {props.item.predictedMany} mortes
+                </Typography>
+                <Typography variant="h6">Bolsonaro - Janeiro/2020</Typography>
               </div>
             </Header>
-            <Prediction>
-              <div>
-                <div>Previsto: </div>
-                <div>{props.item.predictedMany}</div>
-                <div>Realidade: </div>
-                <div>{props.item.actualNumber}</div>
-              </div>
-              <PercentDiv>{props.item.percent} %</PercentDiv>
-            </Prediction>
           </div>
         </CardContent>
-        {/* <CardActions>
-          <Actions>
-            <IconButton>
-              <TwitterIcon />
-            </IconButton>
-            <IconButton>
-              <FacebookIcon />
-            </IconButton>
-          </Actions>
-        </CardActions> */}
       </Card>
     </Content>
   );
