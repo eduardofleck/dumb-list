@@ -56,7 +56,11 @@ function App() {
   const [moreButtonDisabled, setMoreButtonDisabled] = React.useState(true);
 
   const app = feathers();
-  const restClient = rest("http://localhost:3030");
+  var backendUrl = process.env.REACT_APP_BACKEND_URL
+    ? process.env.REACT_APP_BACKEND_URL
+    : "https://dumb-list-backend.azurewebsites.net";
+
+  const restClient = rest(backendUrl);
   app.configure(restClient.axios(axios));
   const list = app.service("predictions");
 
