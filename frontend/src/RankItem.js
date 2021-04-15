@@ -96,7 +96,7 @@ function RankItem(props) {
             </Prediction>
           </div>
         </CardContent>
-        <CardActions>
+        {/* <CardActions>
           <Actions>
             <IconButton>
               <TwitterIcon />
@@ -105,7 +105,7 @@ function RankItem(props) {
               <FacebookIcon />
             </IconButton>
           </Actions>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </Content>
   );

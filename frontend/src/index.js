@@ -6,10 +6,24 @@ import reportWebVitals from "./reportWebVitals";
 import axios from "axios";
 import feathers from "@feathersjs/feathers";
 import rest from "@feathersjs/rest-client";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#000000",
+    },
+    secondary: {
+      main: "#fff35e",
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

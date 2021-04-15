@@ -9,7 +9,6 @@ import { Card } from "@material-ui/core";
 import axios from "axios";
 import feathers from "@feathersjs/feathers";
 import rest from "@feathersjs/rest-client";
-import auth from "@feathersjs/authentication-client";
 
 const MainGrid = styled.ul`
   display: grid;
@@ -101,11 +100,9 @@ function App() {
       </NavBar> */}
       <AppBar position="static">
         <Toolbar>
-          <Button color="inherit" onClick={getPredictions}>
-            Dumb List!
-          </Button>
-          <Button color="inherit">Aparições</Button>
-          <Button color="inherit">Ordem</Button>
+          <Button color="inherit">Dumb List!</Button>
+          {/* <Button color="inherit">Aparições</Button>
+          <Button color="inherit">Ordem</Button> */}
         </Toolbar>
       </AppBar>
       <MainGrid>
